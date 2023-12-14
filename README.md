@@ -91,7 +91,3 @@ this project but it is not a guarantee. This is a personal project and is in no
 way affiliated with Riot Games.
 
 <!-- Properly citing disclaimer from Riot Games Developer Portal https://developer.riotgames.com/docs/lol -->
-
-Dependencies:
-
-requests cloudscraper httpx beautifulsoup4 pyyaml rich pyjwt imaplib2
