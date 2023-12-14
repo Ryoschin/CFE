@@ -28,7 +28,7 @@ def init() -> tuple[logging.Logger, Config]:
         "-c",
         "--config",
         dest="configPath",
-        default="/home/container/CapsuleFarmerEvolved/config/config.yaml",
+        default="/home/container/CFE/config/config.yaml",
         help="Path to a custom config file",
     )
     args = parser.parse_args()
