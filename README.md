@@ -10,84 +10,27 @@
 <a href="https://github.com/LeagueOfPoro/CapsuleFarmerEvolved"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/LeagueOfPoro/CapsuleFarmerEvolved"></a>
 </p>
 
-Are you tired of watching professional League of Legends games? Do you watch
-only for the drops? This is a revolution in the farming of League of Legends
-Esports capsules!
+# Getting started
 
-This is a successor to the old
-[EsportsCapsuleFarmer](https://github.com/LeagueOfPoro/EsportsCapsuleFarmer)
-which relied on a web browser to watch videos. _Capsule Farmer Evolved_
-simulates traffic to lolesports.com servers and tricks it into thinking the
-account is watching a stream. This approach drastically lowers the hardware
-requirements.
+In order to use this overlay, do the following:
 
-# ⚠️⚠️⚠️ 15/3/23: RIOT TOOK ACTION AGAINST CAPSULE FARMER EVOLVED! IT STILL WORKS BUT YOUR ACCOUNT MIGHT GET SHADOWBANNED.
+- Copy the contents of the `app.py` file
+- Set `python app.py` as the startup command
+- Run the server for the first time, it will clone the repository (counting that it has git)
 
-![Screenshot 2023-03-14 220953](https://user-images.githubusercontent.com/95635582/225154524-427c863c-c374-48fd-a097-6a00143194fb.png)
+- Next set the following command as the startup one:
 
-Use this tool at your OWN risk. Watch this video for details:
-https://www.youtube.com/watch?v=DeKE3a8EV5c
+```
+pip install requests cloudscraper httpx beautifulsoup4 pyyaml rich pyjwt imaplib2
+```
 
-[More information about Drops From Riot Games.](https://lolesports.com/article/drops-information-for-lol-esports-season-2023/blt15759d60486d16cc)
+- Run the server for the second time, it will install all the dependencies
 
-# README CONTENTS
+- Open CFE/config/config.yaml and enter your information
+- Set the following command as the startup command:
 
-1. [Features](#features)
-2. [Community](#community)
-3. [Notes](#notes)
-4. [Configuration](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Configuration)
-5. [Installation](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki)
-   - [Windows](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-Windows)
-   - [Linux](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-Linux)
-   - [Docker](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-Docker)
-   - [MacOS](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-MacOS)
-   - [Android](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-Android)
-   - [Google TV](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Advanced-Installation-for-Google-TV)
-6. [Disclaimer⚠️](#disclaimer)
+```
+python CFE/src/main.py
+```
 
-## Features
-
-- Watch all live matches on lolesports.com
-- Show how many drops each account received during the program run
-- Very lightweight - no external browser needed
-- Simple GUI
-- 2FA (experimental) - programs prompts for the code on startup
-- Docker supported
-- ARM supported (Raspberry Pi)
-- [Discord Webhook support](https://github.com/LeagueOfPoro/CapsuleFarmerEvolved/wiki/Configuration#configuration-options)
-
-## Community
-
-If you have any type of issue, need help, or just want to hangout. Come to
-[League of Poro's Discord server](https://discord.gg/ebm5MJNvHU).
-
-## Support my work
-
-[Subscribe to my channel on YouTube](https://www.youtube.com/channel/UCwgpdTScSd788qILhLnyyyw?sub_confirmation=1)
-or even
-
-<a href='https://www.youtube.com/channel/UCwgpdTScSd788qILhLnyyyw/join' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://share.leagueofporo.com/yt_member.png' border='0' alt='Become a channel member on YouTube' />
-
-## Notes
-
-- I recommend disabling 2FA on accounts using the bot. It will be way more
-  stable, and it won't ask you for a code in the middle of a random night.
-- Not every account receives every drop. That is normal, and it would happen
-  even if you watched it on the web.
-  ![image](https://user-images.githubusercontent.com/95635582/215994461-4f613b76-0e96-4b1a-b138-f1caa748df65.png)
-- Regularly check if the "Heartbeat" happened within the last few minutes. If
-  not, restart the program.
-
-## Disclaimer
-
-CapsuleFarmerEvolved is not endorsed by Riot Games and does not reflect the
-views or opinions of Riot Games or anyone officially involved in producing or
-managing Riot Games properties. Riot Games and all associated properties are
-trademarks or registered trademarks of Riot Games, Inc
-
-This project comes with no guarantee or warranty. You are responsible for
-whatever happens from using this project. No bans have been reported from using
-this project but it is not a guarantee. This is a personal project and is in no
-way affiliated with Riot Games.
-
-<!-- Properly citing disclaimer from Riot Games Developer Portal https://developer.riotgames.com/docs/lol -->
+- Run the server for the third time, and you're ready to go!
