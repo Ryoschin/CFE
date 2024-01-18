@@ -8,6 +8,8 @@ In order to set everything up, do the following:
 ```python
 import subprocess
 
+repository = "https://github.com/Ryoschin/CFE.git"
+
 dependencies = [
     "requests",
     "cloudscraper",
@@ -19,7 +21,7 @@ dependencies = [
     "imaplib2",
 ]
 
-subprocess.check_call(["git", "clone", "https://github.com/Ryoschin/CFE.git"])
+subprocess.check_call(["git", "clone", repository])
 subprocess.check_call(["pip", "install"] + dependencies)
 ```
 
